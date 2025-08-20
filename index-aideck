@@ -800,7 +800,11 @@
             <div class="slide-content">
                 <div class="contact-grid">
                     <div class="profile-section">
-                        <div class="profile-image"><video src="ANDRES NO BUSINESS PLAN.mov" autoplay loop muted playsinline style="width:100%;height:100%;border-radius:50%;object-fit:cover;"></video></div>
+                        <div class="profile-image">
+        <video src="assets/andres_profile.mov" autoplay loop muted playsinline
+               style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        </video>
+</div>
                         <h2 style="margin-bottom: 5px;">Andrés Urrego</h2>
                         <p style="color: #f97316; font-weight: bold; margin-bottom: 5px;">CEO, Moil Enterprise</p>
                         <p style="color: #cbd5e1; margin-bottom: 20px; font-size: 0.9rem;">AI Strategy &amp; Business Growth Expert</p>
@@ -809,7 +813,7 @@
                             <p style="color: #3b82f6; font-weight: bold; margin-bottom: 10px;"><i class="fas fa-envelope"></i> andres@moilapp.com</p>
                             <p style="color: #3b82f6; font-weight: bold;"><i class="fas fa-globe"></i> www.moilapp.com</p>
                         </div>
-                        <div class="big-qr"><img src="qr_moil_insight.png" alt="QR to business.moilapp.com/insight" style="width:100%;height:100%;object-fit:contain;border-radius:12px;"></div>
+                        <div class="big-qr"><img class="qr" src="assets/qr_insight.png" alt="QR to business.moilapp.com/insight" style="width:100%;height:100%;object-fit:contain;border-radius:12px;"></div>
                         <p class="walkin-note">Open your business plan doc now. You’ll be copy/pasting prompts during the demos.</p>
                     </div>
                     <div class="social-links">
@@ -1046,12 +1050,7 @@
                         <div class="step-icon">1</div>
                         <h4>Market Analysis</h4>
                         <div class="prompt-example" style="font-size: 0.8rem; margin-top: 10px;">
-                            "
-Step 1: Analyze <<<BP_START>>> [Business plan] <<<BP_END>>> for target market and competitors. Summarize top 3 opportunities and risks.<br><br>
-Step 2: Create positioning strategy that differentiates from listed competitors (2–3 points max).<br><br>
-Step 3: Propose a 90-day launch campaign with 3 channels, 2 tactics each. Present as a timeline with week ranges.<br><br>
-Result: A concise GTM outline that can be presented in 3–5 minutes.
-"
+                            "Analyze the competitive landscape for B2B project management software targeting teams of 10-50 people."
                         </div>
                     </div>
                     <div style="font-size: 2rem; color: #f97316;">↓</div>
@@ -1154,21 +1153,12 @@ Result: A concise GTM outline that can be presented in 3–5 minutes.
                 </div>
 
                 <div class="prompt-example" style="max-width: 900px; margin: 30px auto;">
-                    <div class="prompt-example" style="max-width: 900px; margin: 30px auto;">
-<strong>🎯 MASTER PITCH DECK PROMPT (C-A-R-E Method):</strong><br><br>
-Context: <<<BP_START>>> [Paste full business plan here] <<<BP_END>>>. You are preparing an investor pitch for Buda Builders, a sustainable construction company in Texas seeking $500K seed funding to capture 15% of a $300M local market. Differentiator: only certified green builder using 100% sustainable materials.<br><br>
-
-Action: Create a compelling 6-slide investor deck. Each slide must include:<br>
-• Title<br>
-• 3–4 concise bullet points (grounded in the plan)<br>
-• 1 key metric or data point (cite source if available)<br>
-• Simple visual suggestion (chart, diagram, or image cue)<br><br>
-
-Result: A structured deck ready to pitch to angel investors within 60 days.<br><br>
-Input: Use ONLY the pasted business plan for claims. If data is missing, insert placeholder and label as assumption.<br><br>
-Example: Slides must cover: Problem, Solution, Market, Competition, Business Model, Financial Ask.<br><br>
-Design: Use a clean 16:9 layout, deep navy + indigo palette, orange highlights for key metrics. Montserrat for headings, Inter for body. Suggest iconography for each slide and indicate one visual (chart/photo) per slide.
-</div>
+                    <strong>🎯 MASTER PITCH DECK PROMPT (C-A-R-E Method):</strong><br><br>
+                    <strong>Context:</strong> I'm creating an investor pitch deck for Buda Builders, a sustainable construction company in Buda, Texas. We're seeking $500K to scale operations and capture 15% of the $300M local market. Our key differentiator is being the only certified green builder using 100% sustainable materials.<br><br>
+                    <strong>Action:</strong> Create a compelling 6-slide investor presentation with slide titles, key bullet points, supporting data, and visual descriptions for each slide.<br><br>
+                    <strong>Result:</strong> Secure investor meetings and funding commitments within 60 days of presentation.<br><br><strong>Input:</strong> I will paste my full business plan between <code>&lt;&lt;&lt;BP_START&gt;&gt;&gt;</code> and <code>&lt;&lt;&lt;BP_END&gt;&gt;&gt;</code>. Ground every slide, KPI, and claim in the pasted plan; estimate only where necessary and label assumptions.<br><br>
+                    <strong>Example:</strong> Slide format - Title, 3-4 bullet points, 1 key metric, visual description. Include: Problem, Solution, Market, Competition, Business Model, Financial Ask.<br><br><strong>Design:</strong> Use a clean 16:9 layout with generous whitespace; color palette in deep blue (#0f172a), indigo accents (#3b82f6), and orange highlight (#f97316) for key metrics; headings in Montserrat (bold), body in Inter; include one simple chart (bar/line) where relevant; specify stock/photo type (real project photos or clean construction renders); recommend iconography for each slide.
+                </div>
 
                 <div style="text-align: center; margin-top: 30px;">
                     <button class="cta-button" onclick="startTimer(1500)">Start Pitch Deck Demo</button>
@@ -1208,24 +1198,12 @@ Design: Use a clean 16:9 layout, deep navy + indigo palette, orange highlights f
                 </div>
 
                 <div class="prompt-example" style="max-width: 900px; margin: 30px auto;">
-                    <div class="prompt-example" style="max-width: 900px; margin: 30px auto;">
-<strong>🎨 MASTER BRANDING PROMPT (Chain Method):</strong><br><br>
-Step 1: Analyze <<<BP_START>>> [Full business plan] <<<BP_END>>> to extract brand positioning. Identify: target audience, unique differentiators, competitor landscape, tone of voice.<br><br>
-
-Step 2: Based on the positioning, create visual identity concepts:<br>
-• 3 logo descriptions (incorporating eco/construction/Texas motifs) with rationale<br>
-• Palette of 6 colors (hex + usage % breakdown)<br>
-• Typography stack (Google Fonts + fallback options)<br>
-• SVG construction notes for logos (paths, symmetry cues)<br><br>
-
-Step 3: Develop messaging kit:<br>
-• 5 tagline options<br>
-• 1 elevator pitch (30 sec)<br>
-• Brand voice guidelines (tone, dos/don’ts)<br>
-• 3 key value propositions tailored to customer segments<br><br>
-
-Result: A coherent, premium brand identity package consistent across visuals and messaging.
-</div>
+                    <strong>🎨 MASTER BRANDING PROMPT (Chain Method):</strong>
+<br><br>
+                    <strong>Step 1:</strong> "Analyze <<<BP_START>>>[Paste your full business plan here]<<<BP_END>>> to extract brand positioning. Identify your target audience, unique differentiators, competitor landscape, tone of voice, market size, and eco‑conscious trends specific to Central Texas. Summarize how Buda Builders is currently positioned and where gaps exist."<br><br>
+                    <strong>Step 2:</strong> "Based on positioning, create visual identity concepts: 3 logo descriptions (incorporating house/leaf/Texas elements), color palette with hex codes (earth tones + modern accents), typography recommendations. Output: provide 3 logo concept descriptions with rationale + suggested SVG construction notes (paths, symmetry), a 6‑color palette with hex codes and usage ratios, and typography stack with Google Fonts links and fallback options."<br><br>
+                    <strong>Step 3:</strong> "Using brand identity, develop messaging kit: 5 tagline options, elevator pitch, brand voice guidelines, and key value propositions for different customer segments."
+                </div>
 
                 </div>
 </div>
@@ -1239,9 +1217,7 @@ Result: A coherent, premium brand identity package consistent across visuals and
             <div class="slide-content">
                 <div class="prompt-example" style="max-width: 900px; margin: 0 auto 20px;">
                     <strong>Logo Generation Prompts (ChatGPT‑5 Image/Logo)</strong><br><br>
-                    1) <em>
-Generate 3 distinct logo options as vector SVGs + rationale paragraphs. Provide color codes and usage guidance for each. Include light/dark versions. Label any speculative design choices as “assumed.”
-<br><br>Modern Eco‑Home Monogram</em><br>
+                    1) <em>Modern Eco‑Home Monogram</em><br>
                     "Create a minimalist monogram logo for 'Buda Builders' combining the letters B+B into a geometric house silhouette with a subtle leaf motif. Style: flat, scalable, brandable. Deliver 3 options as crisp vector-style SVGs, dark and light versions. Colorways: deep green (#2E7D32), warm neutral (#8D6E63), accent cream (#FFF8E1). Include construction/architecture feel without clichés."<br><br>
                     2) <em>Texas Outline + Leaf</em><br>
                     "Design a logo using a refined Texas outline integrating a single leaf forming the roofline. Avoid clutter; emphasize premium sustainability. Provide 3 lockups: icon-only, horizontal, stacked; export as SVG. Suggest primary/secondary palettes and safe monochrome version."<br><br>
@@ -1251,7 +1227,7 @@ Generate 3 distinct logo options as vector SVGs + rationale paragraphs. Provide 
                 <div class="framework-card" style="max-width: 900px; margin: 20px auto;">
                     <h3>Sample Output (Monogram Concept)</h3>
                     <div style="display:flex;justify-content:center;align-items:center;padding:20px;background:rgba(15,23,42,0.8);border-radius:12px;">
-                        <img src="logo_bb_monogram.svg" alt="Buda Builders Monogram Sample" style="width:320px;height:auto;">
+                        <img src="logo_bb_monogram.png" alt="Buda Builders Monogram Sample" style="width:320px;height:auto;">
                     </div>
                     <p style="text-align:center;color:#94a3b8;margin-top:10px;">SVG preview created for demo purposes. Use prompts above to generate more options live.</p>
                 </div>
@@ -1425,7 +1401,11 @@ Generate 3 distinct logo options as vector SVGs + rationale paragraphs. Provide 
             <div class="slide-content">
                 <div class="contact-grid">
                     <div class="profile-section">
-                        <div class="profile-image"><video src="ANDRES NO BUSINESS PLAN.mov" autoplay loop muted playsinline style="width:100%;height:100%;border-radius:50%;object-fit:cover;"></video></div>
+                        <div class="profile-image">
+        <video src="assets/andres_profile.mov" autoplay loop muted playsinline
+               style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        </video>
+</div>
                         <h2 style="margin-bottom: 5px;">Andrés Urrego</h2>
                         <p style="color: #f97316; font-weight: bold; margin-bottom: 5px;">CEO, Moil Enterprise</p>
                         <p style="color: #cbd5e1; margin-bottom: 20px; font-size: 0.9rem;">AI Strategy & Business Growth Expert</p>
@@ -1439,8 +1419,8 @@ Generate 3 distinct logo options as vector SVGs + rationale paragraphs. Provide 
                         
                         <!-- QR Code placeholder -->
                         <div style="width: 120px; height: 120px; border: 2px dashed #3b82f6; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
-                            <img src="qr_moil_insight.png" alt="QR to business.moilapp.com/insight" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
-                        </div>
+    <img class="qr" src="assets/qr_insight.png" alt="QR to business.moilapp.com/insight" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
+</div>
                         <p style="color: #cbd5e1; font-size: 0.8rem; margin-top: 8px;">Scan for instant contact</p>
                     </div>
                     
@@ -1816,13 +1796,7 @@ Generate 3 distinct logo options as vector SVGs + rationale paragraphs. Provide 
                       <strong>Step 3:</strong> "Develop comprehensive success metrics and risk mitigation plan. Create: performance dashboard tracking 12 key metrics (lead quality, conversion rates, project margins), contingency plans for each identified risk, monthly review checkpoints, pivot strategies if targets missed, and 6-month post-launch growth projections with expansion planning. Design: Provide a Gantt-style 16:9 timeline with weekly swimlanes (Brand, Marketing, Sales, Ops), milestone icons, and color‑coded risk flags. Include slide notes for presentation."`,
                       
                 marketing: `<strong>📱 MARKETING CAMPAIGN PROMPT (C-A-R-E Method):</strong><br><br>
-                          <strong>Input:</strong> My complete business plan will be pasted between <<<BP_START>>> and <<<BP_END>>>. Base segments, creative angles, and budgets on it.<br><br>
-Context: <<<BP_START>>> [Business plan] <<<BP_END>>>.<br><br>
-Action: Build a 60-day marketing campaign (social + email + paid).<br><br>
-Result: Generate 30 qualified leads.<br><br>
-Example: Weekly content calendar (table: week, channel, topic, CTA).<br><br>
-Design: Suggest ad mockups and content themes.
- Target: affluent Central Texas homeowners (income $200K+, age 35-60, value sustainability). Current: 500 Instagram followers, 150 past clients, strong Google reviews (4.9/5). Budget: $12K for 60-day campaign. Goal: establish predictable lead flow for premium projects ($150K+ average).<br><br>
+                          <strong>Input:</strong> My complete business plan will be pasted between <<<BP_START>>> and <<<BP_END>>>. Base segments, creative angles, and budgets on it.<br><br><strong>Context:</strong> Buda Builders needs systematic lead generation beyond referrals. Target: affluent Central Texas homeowners (income $200K+, age 35-60, value sustainability). Current: 500 Instagram followers, 150 past clients, strong Google reviews (4.9/5). Budget: $12K for 60-day campaign. Goal: establish predictable lead flow for premium projects ($150K+ average).<br><br>
                           <strong>Action:</strong> Create integrated marketing campaign including: Google Ads strategy (search + display), social media content system (Instagram + Facebook), email marketing automation, local partnership development, and content marketing plan. All materials should emphasize sustainability expertise, showcase premium craftsmanship, and target eco-conscious luxury market.<br><br>
                           <strong>Result:</strong> Generate 35 qualified leads (verified budget $150K+, timeline 6-18 months) and establish Buda Builders as the premium sustainable builder in Central Texas within 60 days.<br><br>
                           <strong>Example:</strong> Weekly content calendar with specific post themes, Google Ads campaigns with keyword lists and ad copy variations, email sequences for different buyer stages, partnership proposal templates for eco-luxury brands, tracking dashboard with conversion metrics, and creative guidelines using earth tones (#2E7D32 primary, #8D6E63 secondary, #FFF8E1 accent) with premium photography standards.`
